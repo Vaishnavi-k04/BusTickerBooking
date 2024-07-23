@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bus Ticket Booking</title>
+    <link rel="stylesheet" href="stylesalt.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bus Ticket Booking</h1>
+    </header>
+    <main>
+      <form id="bookingForm">
+        <label for="origin">Origin:</label>
+        <input type="text" id="origin" name="origin" required />
+
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" required />
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="tickets">Number of Tickets:</label>
+        <input type="number" id="tickets" name="tickets" required />
+
+        <label for="busType">Bus Type:</label>
+        <select id="busType" name="busType" required>
+          <option value="AC">AC</option>
+          <option value="Non-AC">Non-AC</option>
+        </select>
+
+        <label for="paymentMethod">Payment Method:</label>
+        <select id="paymentMethod" name="paymentMethod" required>
+          <option value="GPay">Google Pay</option>
+          <option value="PhonePe">PhonePe</option>
+          <option value="Cash">Cash</option>
+        </select>
+
+        <button type="submit">Book Now</button>
+      </form>
+      <p id="cost"></p>
+      <button id="downloadTicket" style="display: none">Download Ticket</button>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
